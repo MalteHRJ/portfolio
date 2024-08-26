@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   h1 {
+      @apply leading-snug text-4xl font-josefin font-bold ;
+   };
+   h2 {
+      @apply  leading-normal text-2xl font-inter font-light dark:text-light-hover text-balance;
+   };
+   h3{
+      @apply leading-snug text-xl font-inter font-light dark:text-light-hover;
+   };
+   p {
+      @apply leading-normal text-lg font-inter max-w-[85ch] font-normal;
+   };
+   ul{
+      @apply list-inside list-disc;
+   };
+   ol{
+      @apply list-inside list-decimal;
+   }
+   table{
+      @apply border-separate w-full;
+   }
+   hr{
+      @apply border-t border-dark dark:border-light
+   }
+}
