@@ -1,9 +1,10 @@
 ---
 layout: "../layouts/Layout.astro"
-title: "Projects"
+title: "Highlighted Projects"
 ---
 
 import IconItem from "../components/IconItem.astro";
+import ExperienceListItem from "../components/ExperienceListItem.astro"
 
 # {frontmatter.title}
 
@@ -11,6 +12,8 @@ import IconItem from "../components/IconItem.astro";
   <IconItem name="github" text="malt656c" href="https://github.com/malt656c" />
 </div>
 
-<div class="grid place-items-center w-full min-h-96 h-full border border-dark dark:border-light rounded-lg">
-  <span class="font-inter text-3xl">More Coming Soon</span>
-</div>
+<section class="grid place-items-center w-full   ">
+
+<ExperienceListItem href="https://maltehrj.github.io/eu_kandidattest_graf/" title="Weighted graph over danish EP candidates" description="graph with nodes representing danish EU-Parlement candidates. Connections between candidates are weighted by how many political issues they agree on" thumbnail="../projects/ep_graph_thumbnail.webp"/>
+
+</section>
